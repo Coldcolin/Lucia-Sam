@@ -1,0 +1,22 @@
+header {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+h2{
+  font-family: 'Emotional Rescue Personal Use', sans-serif;
+}
+
+h3{
+  font-family: "Aleo", serif;
+}
+
+.fade-in-image.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+p {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+}
