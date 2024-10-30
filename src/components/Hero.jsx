@@ -1,4 +1,13 @@
 import {useState, useEffect} from "react"
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
+import { Resize } from "@cloudinary/url-gen/actions";
+
+const cld = new Cloudinary({
+    cloud: {
+        cloudName: "coldcolin"
+    }
+})
 
 const Hero = () => {
     const [days, setDays] = useState(0);
@@ -67,7 +76,8 @@ const Hero = () => {
         </div>
     
     <div className="w-full md:w-1/2 h-[50vh] md:h-[calc(100vh-60px)] flex items-center justify-center py-6 md:py-0 transition-opacity duration-500 opacity-0 animate-fade-in">
-        <img src="https://res.cloudinary.com/coldcolin/image/upload/v1730033533/our_photo_ux8bqa.png" alt="couple's image" className="w-full h-full object-contain" />
+        {/* <img loading="lazy" fetchPriority="high" decoding="async" src="https://res.cloudinary.com/coldcolin/image/upload/v1730033533/our_photo_ux8bqa.png" alt="couple's image" className="w-full h-full object-contain" /> */}
+        <AdvancedImage cldImg={cld.image("our_photo_ux8bqa").format("auto").quality("auto")} className="w-full h-full object-contain"/>
     </div>
     </div>
   )

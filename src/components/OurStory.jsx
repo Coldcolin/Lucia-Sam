@@ -13,7 +13,8 @@ const OurStory = () => {
                 <div className="w-full h-full flex flex-col items-center gap-0 md:gap-7 md:w-[35%]">
                     
                     <motion.img 
-                      src="https://res.cloudinary.com/coldcolin/image/upload/v1730033806/Bride_photo_vonnxq.png" 
+                      src="https://res.cloudinary.com/coldcolin/image/upload/v1730033806/Bride_photo_vonnxq.png"
+                      loading="lazy" fetchPriority="high" decoding="async" 
                       alt="bride" 
                       className="w-[80%] h-[70%] object-contain min-w-[280px] md:w-full"
                       initial={{ opacity: 0, translateY: 20 }} 
@@ -23,7 +24,8 @@ const OurStory = () => {
                     />
                     <div className="w-[90%] flex flex-col gap-4 min-w-[280px] md:w-[80%]">
                         <h3 className="text-[20px] font-semibold">THE BRIDE</h3>
-                        <p className="leading-[30px] text-[16px] text-[#555555] md:text-[20px] md:leading-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio arcu, aliquet quis sem nec, tristique varius purus. Nulla facilisi. Integer pretium tortor nec purus sollicitudin condimentum...</p>
+                        <p className="leading-[30px] text-[16px] text-[#555555] md:text-[20px] md:leading-[30px]">It all began with a casual friend request on Facebook. His face seemed familiar, but it took a moment to realize he was my best friend's brother from secondary school. What started as simple conversations quickly turned into a delightful routine, a daily ritual of checking in on each other that felt more like an addiction than a habit.
+                        ...</p>
                         <p className="text-[#6A4843] font-semibold">VIEW MORE</p>
                     </div>
                 </div>
@@ -33,6 +35,7 @@ const OurStory = () => {
                 <div className="w-full h-full flex flex-col items-center gap-0 md:gap-7 md:w-[35%]">
                     <motion.img 
                       src="https://res.cloudinary.com/coldcolin/image/upload/v1730033842/Groom_photo_qgagqd.png" 
+                      loading="lazy" fetchPriority="high" decoding="async"
                       alt="groom" 
                       className="w-[80%] h-[70%] object-contain min-w-[280px] md:w-full"
                       initial={{ opacity: 0, translateY: 20 }} 
@@ -42,7 +45,8 @@ const OurStory = () => {
                     />
                     <div className="w-[90%] flex flex-col gap-4 min-w-[280px] md:w-[80%]">
                         <h3 className="text-[20px] font-semibold">THE GROOM</h3>
-                        <p className="leading-[30px] text-[16px] text-[#555555] md:text-[20px] md:leading-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio arcu, aliquet quis sem nec, tristique varius purus. Nulla facilisi. Integer pretium tortor nec purus sollicitudin condimentum...</p>
+                        <p className="leading-[30px] text-[16px] text-[#555555] md:text-[20px] md:leading-[30px]">On Sunday, February 16, 2020, is etched in my memory forever. That's the day I first laid eyes on her at the Catholic Youth Organisation of Nigeria's Love Feast. Her stunning red gown, captivating smile, and gentle gaze left me spellbound. I couldn't help but steal glances, hoping to catch her attention. Though we didn't exchange a word that day, her presence lingered in my heart.
+                        ...</p>
                         <p className="text-[#6A4843] font-semibold">VIEW MORE</p>
                     </div>
                 </div>
